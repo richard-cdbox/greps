@@ -1,0 +1,26 @@
+{
+  "Replace non-standard spaces with normal spaces (tab included)": [
+    "[\\u00a0\\u2002-\\u200b\\u202f\\u0009]{1,}",
+    "\\u0020"
+  ],
+  "Replace non-standard spaces with normal spaces (tab not included)": [
+    "[<EMSPACE><ENSPACE><NBSP><NARROW_NBSP><HAIRSPACE><THINSPACE><THREE_PER_EM_SPACE><FOUR_PER_EM_SPACE><SIX_PER_EM_SPACE><ZEROSPACE><FIGURESPACE><PUNCTSPACE>]{1,}",
+    "<SPACE>"
+  ],
+  "Replace multiple spaces with single spaces": [
+    "[\\u0020]{2,}",
+    "\\u0020"
+  ],
+  "Remove leading spaces": [
+    "(?<=[<ENDPARA><LINEBREAK>])<SPACE>+|^<SPACE>+",
+    ""
+  ],
+  "Remove trailing spaces": [
+    "\\u0020+(?=[<ENDPARA><LINEBREAK>])|<SPACE>+$",
+    ""
+  ],
+  "_find_what_history": [
+  ],
+  "_change_to_history": [
+  ]
+}
